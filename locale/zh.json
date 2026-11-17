@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "思考摘要",
+    "description": "用可指定的模型（已接入 DSH 的模型或 Ollama 等外源端点）总结思考内容，显示在思考 UI 上：悬停展开、点击固定。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

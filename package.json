@@ -1,0 +1,58 @@
+{
+  "name": "dsh-cot-summary",
+  "description": "Summarize expanded model reasoning with a selectable model (DSH provider or external OpenAI-compatible endpoint such as Ollama)",
+  "version": "0.2.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.0"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "docs",
+    "vendor",
+    "README.md",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT",
+  "author": "xiehao-001",
+  "homepage": "https://github.com/xiehao-001/dsh-cot-summary#readme",
+  "bugs": {
+    "url": "https://github.com/xiehao-001/dsh-cot-summary/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiehao-001/dsh-cot-summary.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "reasoning",
+    "summary",
+    "ollama",
+    "cot"
+  ]
+}

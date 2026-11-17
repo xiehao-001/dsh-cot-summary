@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Reasoning Summary",
+    "description": "Summarize model reasoning with a chosen model (DSH-connected or an external OpenAI-compatible endpoint such as Ollama) and show it on the reasoning UI: hover to expand, click to pin.",
+    "detail": "docs/DETAIL.md"
+  }
+}
